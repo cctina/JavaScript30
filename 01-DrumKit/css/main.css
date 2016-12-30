@@ -1,12 +1,16 @@
 body {
-	text-align: center;
+	text-align: center;	
+	background: url('../StockSnap_drum.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .container {
-	width: 800px;
-	/*height: 300px;*/
+	width: 100%;
 	vertical-align: middle;
-	margin: 200px auto;
+	margin: 250px auto;
 }
 
 h1 {
@@ -15,27 +19,29 @@ h1 {
 
 .key {
 	display: inline-block;
-	height: 70px;
-	width: 70px;
+	width: 94px;
 	border: 4px solid #000000;
-	border-radius: 10px;
+	border-radius: 50%	;
 	margin: 10px;
-	padding: 15px 5px 0 5px;
-	background: rgba(0,0,0,0.4);
+	padding: 15px 0 20px 0;
+	background: rgba(0,0,0,0.6);
+	/*轉換狀態時的動畫時間長度*/
 	transition: all 0.07s;
 }
 .playing {
-	/*放大1.1倍*/
-	transform: scale(1.1);	
+	/*縮小0.9倍*/
+	transform: scale(0.9);	
 	border-color: #ffc600;
 	box-shadow: 0 0 10px #ffc600;
 }
 
 .sound {
 	font-size: 0.8em;
+	color: #ffc600;
 }
 kbd {
 	display: block;
-	font-size: 1.5em;
+	font-size: 2em;
+	color: #ffffff;
 }
 
