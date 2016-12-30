@@ -15,7 +15,6 @@ HTML / JS
 - Event: *'transitionend'*
 - *element*.classList.add() / .classList.remove() / .classList.toggle()
 
-
 CSS
 
 - transition: all 0.07s
