@@ -9,11 +9,11 @@ User can press any key which shows up on the page. Each key plays different soun
 
 HTML / JS
 
-- <audio\> 
-- Attribute: data-*
-- Event property: key / keyCode
-- Event: *'transitionend'*
-- *element*.classList.add() / .classList.remove() / .classList.toggle()
+- `<audio>` 
+- Attribute: `data-*`
+- Event property: `key` &nbsp;`keyCode`
+- Event: *`transitionend`*
+- `*element*.classList.add()` &nbsp;`.classList.remove()` &nbsp;`.classList.toggle()`
 
 CSS
 
