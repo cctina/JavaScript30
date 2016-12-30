@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+}
+
+.container {
+	width: 800px;
+	/*height: 300px;*/
+	vertical-align: middle;
+	margin: 200px auto;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+.key {
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	border: 4px solid #000000;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 15px 5px 0 5px;
+	background: rgba(0,0,0,0.4);
+	transition: all 0.07s;
+}
+.playing {
+	/*放大1.1倍*/
+	transform: scale(1.1);	
+	border-color: #ffc600;
+	box-shadow: 0 0 10px #ffc600;
+}
+
+.sound {
+	font-size: 0.8em;
+}
+kbd {
+	display: block;
+	font-size: 1.5em;
+}
+

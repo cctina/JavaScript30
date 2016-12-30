@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Yu-Chen Hsu">
+	<meta name="reference" content="https://javascript30.com/">
+	<title>#JavaScript30: #1 JS Drum Kit</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+<!-- 		<h1 id="keycode">Key Code</h1>
+		<input id="keybutton" type="button" value="Click">	
+		<br> -->
+
+		<div data-key="65" class="key">
+			<kbd>A</kbd>
+			<span class="sound">Drum</span>
+		</div>
+		<div data-key="83" class="key">
+			<kbd>S</kbd>
+			<span class="sound">Level Up</span>
+		</div>
+		<div data-key="68" class="key">
+			<kbd>D</kbd>
+			<span class="sound">Fire</span>
+		</div>
+		<div data-key="70" class="key">
+			<kbd>F</kbd>
+			<span class="sound">Wah-wah</span>
+		</div>
+		<div data-key="71" class="key">
+			<kbd>G</kbd>
+			<span class="sound">Metallic Hit</span>
+		</div>
+		<div data-key="72" class="key">
+			<kbd>H</kbd>
+			<span class="sound">Burp</span>
+		</div>
+		<div data-key="74" class="key">
+			<kbd>J</kbd>
+			<span class="sound">Slap</span>
+		</div>
+	</div>
+	
+	<audio data-key="65" src="sounds/183099__dwsd__bd-bodacious.wav">
+		Your browser does not support the <code>audio</code> element.
+	</audio>
+	<audio data-key="83" src="sounds/17633__flatfly__pman8.wav"></audio>
+	<audio data-key="68" src="sounds/33487__cosmicd__006.wav"></audio>
+	<audio data-key="70" src="sounds/80687__1demidegt2__pffttt-wahwah01.wav"></audio>
+	<audio data-key="71" src="sounds/240213__jack__metallic-hit.wav"></audio>
+	<audio data-key="72" src="sounds/342201__christopherderp__burp-sound-effect.wav"></audio>
+	<audio data-key="74" src="sounds/369955__mischy__klick-1.wav"></audio>
+	
+	<script src="js/main.js"></script>
+</body>
+</html>
