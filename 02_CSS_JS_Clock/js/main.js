@@ -16,17 +16,28 @@
 
 		tick: function () {
 			let now = new Date();
+			let hourDeg;
+			let minDeg;
+			let secDeg;	
+			let hourDivider = 12;
 
 			this.hour = now.getHours();
-			model.degree.hour = 90 + (this.hour / 24 * 360 * 2);
-
 			this.min = now.getMinutes();
-			model.degree.min = 90 + (this.min / 60 * 360);
-
 			this.sec = now.getSeconds();
-			model.degree.sec = 90 + (this.sec / 60 * 360);
+			if (this.hour > 12) {
+				hourDivider *= 2; 
+			}	
+			hourDeg = this.hour / hourDivider * 360;
+			minDeg = this.min / 60 * 360;
+			secDeg = this.sec / 60 * 360;	
 
-			// console.log(this.sec + ", " + model.degree.sec);
+			model.degree.hour = 90 + hourDeg + minDeg / hourDivider;
+			model.degree.min = 90 + minDeg + secDeg / 60;
+			model.degree.sec = 90 + secDeg;
+
+			// console.log(this.hour + ", " + model.degree.hour + " deg = 90 + " + hourDeg + " + " + (minDeg / hourDivider) );
+			// console.log(this.min + ", " + model.degree.min + " deg = 90 + " + minDeg + " + " + (secDeg / 60) );
+			// console.log(this.sec + ", " + model.degree.sec + " deg = 90 + " + secDeg );
 			view.render();
 		},
 		
