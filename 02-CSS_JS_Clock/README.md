@@ -25,3 +25,13 @@ CSS
 		- `position: absolute`
 		- `top/left: ...`
 
+## Credit ##
+
+Images
+
+- Background image
+	- File Path: `images/StockSnap_night.jpg`
+	- Source: [StockSnap.io](https://stocksnap.io/photo/NH2WNTX9RV)
+	- Photographer: [Teddy Kelley](https://stocksnap.io/author/22413)
+
+
