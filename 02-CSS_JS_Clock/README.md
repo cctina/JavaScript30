@@ -33,5 +33,6 @@ Images
 	- File Path: `images/StockSnap_night.jpg`
 	- Source: [StockSnap.io](https://stocksnap.io/photo/NH2WNTX9RV)
 	- Photographer: [Teddy Kelley](https://stocksnap.io/author/22413)
+	- License: [Creative Commons CC0](https://stocksnap.io/license)
 
 
