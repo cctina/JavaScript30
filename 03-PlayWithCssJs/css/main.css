@@ -1,0 +1,77 @@
+:root {
+	--base: #8CD790;
+	--blur: 0px;
+	--spacing: 0px;
+}
+
+@font-face {
+    font-family: 'riffic_mediumbold';	/* for Main Title*/
+    src: url('../fonts/riffic_bold_macroman/riffic-bold-webfont.eot');
+    src: url('../fonts/riffic_bold_macroman/riffic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/riffic_bold_macroman/riffic-bold-webfont.woff2') format('woff2'),
+         url('../fonts/riffic_bold_macroman/riffic-bold-webfont.woff') format('woff'),
+         url('../fonts/riffic_bold_macroman/riffic-bold-webfont.ttf') format('truetype'),
+         url('../fonts/riffic_bold_macroman/riffic-bold-webfont.svg#riffic_mediumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_slab500';	/* for Subtitle */
+    src: url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.eot');
+    src: url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+         url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff') format('woff'),
+         url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.ttf') format('truetype'),
+         url('../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	text-align: center;
+	color: #D7FFF1;
+}
+
+.font-title-main {
+	font-family: riffic_mediumbold, sans-serif;
+}
+
+.font-title-sub {
+	font-family: museo_slab500, cambria;
+}
+
+#header {
+	width: auto;
+	line-height: 2.0em;
+	color: #285943;
+	background-color: white;
+	font-size: 1.6em;
+	letter-spacing: 0.2em;
+}
+	.title {
+		color: var(--base);
+		font-size: 1.2em;
+	}
+
+section {
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.controls {
+	background-color: #285943;
+}
+	.control-label {
+		font-size: 1.3em;
+		margin-right: 30px;
+		display: inline-block;	/* Avoid line-breaking between label & input*/
+	}
+
+img {
+	width: 500px;
+	padding: var(--spacing);
+	filter: blur(var(--blur));
+	background-color: var(--base);
+}
