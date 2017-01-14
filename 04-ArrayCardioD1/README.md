@@ -18,11 +18,14 @@ Manipulate data of arraies to meet the requirements. 8 requirements in total.
 JS
 
 - Arrow function `=>`
-	- if `input => input.value > 0`
-	- means `function (input) { return input.value > 0; }`
+	- If `input => input.value > 0`
+	- Means `function (input) { return input.value > 0; }`
+	- `this` works differently in arrow functions. Its value can't be changed and so it won't be changed by any function like `call()`, `apply()`, and `bind()`.
+	- Reading: [Sitepoint - ES6 Arrow Functions: The New Fat & Concise Syntax in JavaScript](https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/)
 - Method chaining
 	- e.g. `data.map( ... ).sort( ... ).filter( ... )`
-	- Reading: [Method Chaining in JavaScript](https://schier.co/blog/2013/11/14/method-chaining-in-javascript.html)
+	- Return `this` in the mdethods to make it easier to read and maintain.
+	- Reading: [Gregory Schier - Method Chaining in JavaScript](https://schier.co/blog/2013/11/14/method-chaining-in-javascript.html)
 - Functions
 	- `Console.table( data )`
 		- Display tabular data as a table in the console.
