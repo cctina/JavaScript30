@@ -114,9 +114,8 @@ a:hover {
 
 .fade-in {
 	opacity: 1;
-	/*transition: opacity 0.5s;*/
 	animation-name: FADE-IN;
-	animation-duration: 1s;
+	animation-duration: 2s;
 }
 
 @keyframes FADE-IN {
